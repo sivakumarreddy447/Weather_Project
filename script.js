@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("city-name").innerText = `City: ${data.name}`;
       document.getElementById(
         "temperature"
-      ).innerText = `Temperature: ${data.main.temp}°C`;
+      ).innerText = `Temperatures: ${data.main.temp}°C`;
       document.getElementById(
         "humid"
       ).innerText = `Humidity: ${data.main.humidity}%`;
