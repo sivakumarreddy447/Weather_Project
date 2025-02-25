@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content-wrapper">
+        <nav class="navbar bg-body-tertiary" id="navbar">
+          <div class="container-fluid justify-content-center">
+            <form class="d-flex" role="search" id="weather-form">
+              <input
+                class="form-control me-2"
+                type="text"
+                placeholder="Enter city name"
+                aria-label="Search"
+                id="city"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </nav>
+
+        <div id="weather-info" class="text-center mt-4">
+          <h2 id="city-name">City:</h2>
+          <p id="temperature">Ttemperature:</p>
+          <p id="humid">Humid:</p>
+          <p id="wind">Wind:</p>
+          <p id="pressure">Pressure</p>
+          <p id="descrption">descrption</p>
+          <img id="weather-img" src="/assets/404.png" alt="Weather Icon" />
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
